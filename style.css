@@ -1,0 +1,123 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+margin:0;
+padding:0;
+color: #fff;
+background: #333439;
+
+}
+.container{
+  width: 1200px;
+  height: 400px;
+  background: #333439;
+  margin:50px auto;
+  position: relative;
+  padding-top: 30px;
+  border-top: 1px solid #fffb009d;
+}
+.container::before{ 
+  width: 30px;
+  height: 30px;
+  background: #fffb009d;
+  position: absolute;
+  content: "";
+  top: -18px;
+  left: -34px;
+  border-radius: 30% 70% 3% 97% / 30% 100% 0% 70%  ;
+  transform:rotate(-40deg)
+}
+
+.container::after{
+  width: 30px;
+  height: 30px;
+  background: #fffb009d;
+  position: absolute;
+  content: "";
+  top: -18px;
+  right:-3%;
+  border-radius: 30% 70% 3% 97% / 30% 100% 0% 70%  ;
+  transform:rotate(126deg)
+}
+
+
+
+.service-wrapper{
+  float: left;
+  width:300px;
+  color:#c7c7c7;
+  margin-left: 30px;
+  position: relative;
+  text-align: justify;
+  /* border:2px solid red; */
+  padding:30px;
+  box-shadow: -3px 13px 28px -1px rgba(0,0,0,0.75);
+-webkit-box-shadow: -3px 13px 28px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: -3px 13px 28px -1px rgba(0,0,0,0.75);
+border-radius: 5px;
+}
+
+
+
+
+
+
+.service-iconbox{
+  width: 50px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 30px;
+  text-align: center;
+  border: 2px solid #ffee5c;
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  transition: 0.5s;
+}
+.service-iconbox::before{
+  content: "";
+  height: 2px;
+  background-color: #ffee5c;
+  position: absolute;
+  top: -20px;
+  left: 10px;
+  right: 10px;
+  transition:0.5s;
+}
+.service-iconbox::after{
+top: auto;
+bottom: -20px;
+left: 10px;
+right: 10px;
+}
+.service-iconbox::after{
+  content: "";
+    height: 2px;
+    background-color: #ffee5c;
+    position: absolute;
+    /* top: -20px; */
+    left: 10px;
+    right: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    transition: 0.5s ;
+}
+.service-wrapper:hover .service-iconbox::after,
+.service-wrapper:hover  .service-iconbox::before {
+  transform: rotate(-90deg);
+}
+.service-wrapper:hover .service-iconbox{
+  transform:translateY(20px)
+}
+
+.service-desc{
+ position: relative;
+ margin-left: 70px;
+}
+
+.service-desc h3{
+  padding-left: 30px;
+ }
