@@ -62,11 +62,6 @@ border-radius: 5px;
 margin-top: 50px;
 }
 
-
-
-
-
-
 .service-iconbox{
   width: 50px;
   height: 60px;
@@ -100,7 +95,6 @@ right: 10px;
     height: 2px;
     background-color: #ffee5c;
     position: absolute;
-    /* top: -20px; */
     left: 10px;
     right: 10px;
     -webkit-box-sizing: border-box;
@@ -108,8 +102,8 @@ right: 10px;
     box-sizing: border-box;
     transition: 0.5s ;
 }
-.service-wrapper:hover .service-iconbox::after,
-.service-wrapper:hover  .service-iconbox::before {
+.service-wrapper:hover :after,
+.service-wrapper:hover :before {
   transform: rotate(-90deg);
 }
 .service-wrapper:hover .service-iconbox{
@@ -272,7 +266,7 @@ border-bottom-left-radius: 20px;
     text-transform: capitalize;
     line-height: 44px;
 }
-.about-contentbx h3 .hig-light{
+.about-contentbx h3 span{
   color: #ffbb00
 }
 .abt-Bio {
@@ -308,4 +302,5 @@ border-bottom-left-radius: 20px;
   /* position: relative;
   overflow: hidden!important;
   z-index: 99; */
+  border-radius: 5px;
 }
